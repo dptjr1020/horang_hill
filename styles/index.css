@@ -183,3 +183,54 @@
     border-bottom: 1px solid #000; padding-bottom: 3px;
     font-size: 0.94rem;
 }
+/* -----------------------------------객실 및 예약안내--------------------- */
+#wrap main #room_reserve_bg {width: 100%; background:#F5F5F5;}
+#wrap main #room_reserve_bg #room_reserve {
+    width: 1220px; margin:70 auto;
+}
+#wrap main #room_reserve_bg #room_reserve h1 {}
+#wrap main #room_reserve_bg #room_reserve > p {}
+#wrap main #room_reserve_bg #room_reserve .room_list {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    margin-bottom: 50px;
+}
+#wrap main #room_reserve_bg #room_reserve .room_list li {}
+#wrap main #room_reserve_bg #room_reserve .room_list li a {}
+#wrap main #room_reserve_bg #room_reserve .room_list li a img {}
+#wrap main #room_reserve_bg #room_reserve .room_list li h2 {
+    font-size: 1.13rem; margin: 10px 0;
+}
+#wrap main #room_reserve_bg #room_reserve .room_list li p {
+    font-size: 0.88rem; color: #555; line-height: 1.7;
+}
+#wrap main #room_reserve_bg #room_reserve .reservation {
+    font-size: 0.94rem; border-bottom: 1px solid #000; padding-bottom: 3px;
+    display: block; margin: 0 auto; width: max-content;
+}
+/* ----------------------------------------게스트 하우스 찾아오시는 길-------------------- */
+#wrap main #direction_info {}
+#wrap main #direction_info .direct_top {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+#wrap main #direction_info .direct_top h1 {}
+#wrap main #direction_info .direct_top p {color: #000;}
+#wrap main #direction_info .map {
+    display: block; margin-bottom: 30px;
+}
+#wrap main #direction_info .map img {}
+#wrap main #direction_info h2 {
+    font-size: 1.5rem; font-weight: 600;
+    line-height: 1.8;
+}
+#wrap main #direction_info > p:nth-of-type(2) {margin: 30px 0;}
+#wrap main #direction_info > p {
+    font-size: 0.94rem; line-height: 1.8;
+}
+/* ---------------------------------------푸터--------------------------------------- */
+#wrap footer {
+    background-color: #000;
+}
+#wrap footer p {
+    color: #fff; width: 1220px; margin: 0 auto; padding: 70px 0;
+    font-size: 0.81rem; line-height: 2;
+}
