@@ -40,9 +40,7 @@
     margin-bottom: 12px;
 }
 #wrap main #hero_bnr #reservation_form h2+div,
-#wrap main #hero_bnr #reservation_form ul li {
-    background-color: lime;
-}
+#wrap main #hero_bnr #reservation_form ul li {}
 /* --------------------------------객실선택------------------------------------------- */
 #wrap main #hero_bnr #reservation_form .room {
     width: 170px;
@@ -186,7 +184,7 @@
 /* -----------------------------------객실 및 예약안내--------------------- */
 #wrap main #room_reserve_bg {width: 100%; background:#F5F5F5;}
 #wrap main #room_reserve_bg #room_reserve {
-    width: 1220px; margin:70 auto;
+    width: 1220px; margin:70px auto;
 }
 #wrap main #room_reserve_bg #room_reserve h1 {}
 #wrap main #room_reserve_bg #room_reserve > p {}
@@ -194,14 +192,32 @@
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
     margin-bottom: 50px;
 }
-#wrap main #room_reserve_bg #room_reserve .room_list li {}
-#wrap main #room_reserve_bg #room_reserve .room_list li a {}
-#wrap main #room_reserve_bg #room_reserve .room_list li a img {}
+/* ----------------------------------------------객실선택 활성화-------- */
+#wrap main #room_reserve_bg #room_reserve .room_list .active {}
+#wrap main #room_reserve_bg #room_reserve .room_list .active a {
+    width: 500px; height: 350px;
+}
+#wrap main #room_reserve_bg #room_reserve .room_list .active a img {
+    
+}
+#wrap main #room_reserve_bg #room_reserve .room_list .active h2 {}
+#wrap main #room_reserve_bg #room_reserve .room_list .active p {display: block;}
+/* -----------------------------------------------객실선택 비활성화---------- */
+#wrap main #room_reserve_bg #room_reserve .room_list li {
+    /* width: calc(100% / 4); */
+}
+#wrap main #room_reserve_bg #room_reserve .room_list li a {
+    width: 220px; height: 250px;
+}
+#wrap main #room_reserve_bg #room_reserve .room_list li a img {
+    width: 100%;
+}
 #wrap main #room_reserve_bg #room_reserve .room_list li h2 {
     font-size: 1.13rem; margin: 10px 0;
 }
 #wrap main #room_reserve_bg #room_reserve .room_list li p {
     font-size: 0.88rem; color: #555; line-height: 1.7;
+    display: none;
 }
 #wrap main #room_reserve_bg #room_reserve .reservation {
     font-size: 0.94rem; border-bottom: 1px solid #000; padding-bottom: 3px;
@@ -230,7 +246,7 @@
 #wrap footer {
     background-color: #000;
 }
-#wrap footer p {
+#wrap footer address {
     color: #fff; width: 1220px; margin: 0 auto; padding: 70px 0;
     font-size: 0.81rem; line-height: 2;
 }
